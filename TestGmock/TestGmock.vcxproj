@@ -20,9 +20,24 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ServiceTest.cpp" />
+    <ClCompile Include="RepositoryTest.cpp" />
+    <ClCompile Include="Service.cpp" />
+    <ClCompile Include="UseCase.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MockMyService.h" />
+    <ClInclude Include="MyService.h" />
+    <ClInclude Include="PlayTimer.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="service.h" />
+    <ClInclude Include="UseCase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TestGmock.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

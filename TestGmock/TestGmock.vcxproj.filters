@@ -13,13 +13,83 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\repository">
+      <UniqueIdentifier>{2cad9411-4259-482a-a419-ef15c0daace2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\repository">
+      <UniqueIdentifier>{de70e40e-6246-4cbd-bf09-bffeeb26712f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{202181da-f957-457b-9bdc-ece5e962fbbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\usecase">
+      <UniqueIdentifier>{48fe22eb-c3a6-4afa-982b-2c616f44bd19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\usecase">
+      <UniqueIdentifier>{66853c4c-2637-4c9c-9a57-496d1f931744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test\repository">
+      <UniqueIdentifier>{548a07fe-d293-4c9a-96bf-2e220a9bed2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test\service">
+      <UniqueIdentifier>{611ab890-5add-4299-af48-395d5e05e5b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\repository\model">
+      <UniqueIdentifier>{d3f37fdf-da4f-40a5-9854-00ffbaa7218b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test\service\mock">
+      <UniqueIdentifier>{2f7914a4-1751-42c5-8519-ca1509cf3da2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gtest\gtest-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gmock\gmock-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Service.cpp">
+      <Filter>Source Files\repository</Filter>
+    </ClCompile>
+    <ClCompile Include="UseCase.cpp">
+      <Filter>Source Files\usecase</Filter>
+    </ClCompile>
+    <ClCompile Include="RepositoryTest.cpp">
+      <Filter>Test\repository</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceTest.cpp">
+      <Filter>Test\service</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="service.h">
+      <Filter>Header Files\repository</Filter>
+    </ClInclude>
+    <ClInclude Include="UseCase.h">
+      <Filter>Header Files\usecase</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayTimer.h">
+      <Filter>Source Files\repository\model</Filter>
+    </ClInclude>
+    <ClInclude Include="MyService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MockMyService.h">
+      <Filter>Test\service\mock</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TestGmock.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

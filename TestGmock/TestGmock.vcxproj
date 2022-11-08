@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="repository.cpp" />
     <ClCompile Include="ServiceTest.cpp" />
     <ClCompile Include="RepositoryTest.cpp" />
     <ClCompile Include="Service.cpp" />
@@ -32,6 +33,8 @@
     <ClInclude Include="MockMyService.h" />
     <ClInclude Include="MyService.h" />
     <ClInclude Include="PlayTimer.h" />
+    <ClInclude Include="Repository.h" />
+    <ClInclude Include="RepositoryTest.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="service.h" />
     <ClInclude Include="UseCase.h" />

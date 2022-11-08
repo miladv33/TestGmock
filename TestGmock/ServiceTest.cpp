@@ -12,7 +12,15 @@ using ::testing::_;
 
 TEST(GetTime, ServiceTest) {
 	//arrange
-	PlayTimer playTimer();
+	MockService serviceTest;
+	//act 
+	long number = serviceTest.getNumber();
+	//assert
+	EXPECT_EQ(number, 0);
+}
+
+TEST(GetTime, ServiceTestWithMock) {
+	//arrange
 	MockService serviceTest;
 	EXPECT_CALL(serviceTest, getNumber()).Times(1).WillOnce(Return(1));
 	//act 

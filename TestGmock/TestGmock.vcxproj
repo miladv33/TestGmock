@@ -24,6 +24,8 @@
     <ClCompile Include="ServiceTest.cpp" />
     <ClCompile Include="RepositoryTest.cpp" />
     <ClCompile Include="Service.cpp" />
+    <ClCompile Include="TimeMapperTest.cpp" />
+    <ClCompile Include="TimerMapper.cpp" />
     <ClCompile Include="UseCase.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -31,12 +33,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MockMyService.h" />
+    <ClInclude Include="MockTimerMapper.h" />
     <ClInclude Include="MyService.h" />
     <ClInclude Include="PlayTimer.h" />
     <ClInclude Include="Repository.h" />
     <ClInclude Include="RepositoryTest.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="service.h" />
+    <ClInclude Include="TimerMapper.h" />
     <ClInclude Include="UseCase.h" />
   </ItemGroup>
   <ItemGroup>

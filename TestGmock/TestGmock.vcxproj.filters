@@ -49,6 +49,15 @@
     <Filter Include="Test\repository\mock">
       <UniqueIdentifier>{f0f880e3-0159-40d5-a6d8-a9b5e4e3eb71}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\repository\mapper">
+      <UniqueIdentifier>{fe7a5af5-64fe-40df-87b5-c74479cf31f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test\repository\mapper">
+      <UniqueIdentifier>{d817ef6d-3a23-4d89-9d29-ef9ccdb75103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\repository\mapper">
+      <UniqueIdentifier>{5d5952ff-1f08-4c92-b219-a91cb6aee7f3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -74,6 +83,12 @@
     </ClCompile>
     <ClCompile Include="repository.cpp">
       <Filter>Source Files\repository\repositoryimp</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerMapper.cpp">
+      <Filter>Source Files\repository\mapper</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeMapperTest.cpp">
+      <Filter>Test\repository\mapper</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +118,12 @@
     </ClInclude>
     <ClInclude Include="RepositoryTest.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerMapper.h">
+      <Filter>Header Files\repository\mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="MockTimerMapper.h">
+      <Filter>Test\repository\mock</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

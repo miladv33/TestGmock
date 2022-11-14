@@ -1,7 +1,7 @@
 #include <iostream>
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
-#include "MockTimerMapper.h"
+#include "TimerMapper.h"
 using namespace std;
 using ::testing::AtLeast;
 using ::testing::Return;
@@ -9,7 +9,8 @@ using ::testing::_;
 
 TEST(getTimerToShowToTheUser, TimerMapper) {
 	//arrange
-	MockTimerMapper timerMapper;
+	TimerMapper timerMapper;
+	
 
 	//act
 	string remainTimeToShow = timerMapper.mapToStringTimer(12);

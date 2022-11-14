@@ -10,6 +10,7 @@ using ::testing::AtLeast;
 using ::testing::Return;
 using ::testing::_;
 
+
 TEST(GetTime, ServiceTest) {
 	//arrange
 	MockService serviceTest;

@@ -8,7 +8,7 @@ using ::testing::AtLeast;
 using ::testing::Return;
 using ::testing::_;
 
-TEST(readFromDataBasa, RepositoryTest) {
+TEST(RepositoryTest, readFromDataBasa) {
 	MockService serviceTest;
 	Repository repository(serviceTest);
 	EXPECT_CALL(serviceTest, getNumber).Times(1).WillOnce(Return(1));

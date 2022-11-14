@@ -11,7 +11,7 @@ using ::testing::Return;
 using ::testing::_;
 
 
-TEST(GetTime, ServiceTest) {
+TEST(ServiceTest, GetTime) {
 	//arrange
 	MockService serviceTest;
 	//act 
@@ -20,7 +20,7 @@ TEST(GetTime, ServiceTest) {
 	EXPECT_EQ(number, 0);
 }
 
-TEST(GetTime, ServiceTestWithMock) {
+TEST(ServiceTest, ServiceTestWithMock) {
 	//arrange
 	MockService serviceTest;
 	EXPECT_CALL(serviceTest, getNumber()).Times(1).WillOnce(Return(1));

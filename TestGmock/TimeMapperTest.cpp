@@ -7,7 +7,7 @@ using ::testing::AtLeast;
 using ::testing::Return;
 using ::testing::_;
 
-TEST(getTimerToShowToTheUser, TimerMapper) {
+TEST(TimerMapper, getTimerToShowToTheUser) {
 	//arrange
 	TimerMapper timerMapper;
 	
